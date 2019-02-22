@@ -1,0 +1,86 @@
+/*=Footer
+---------------------------------------------------------------------*/
+.site-footer {
+    // footer styles
+}
+
+
+$demo-site-footer-bg: #2c3840;
+
+.demo-site-footer {
+  background: $demo-site-footer-bg;
+  color: lighten($demo-site-footer-bg, 40%);
+  padding: 2rem 0 0;
+
+  .demo-site-footer-menu-social a {
+    color: $white;
+  }
+
+  .column-block {
+    margin-bottom: 30px;
+  }
+
+  > .row {
+    margin-bottom: 1rem;
+  }
+
+  @include breakpoint(small only) {
+    .columns {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.demo-site-footer-name {
+  color: $white;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.demo-site-footer-title {
+  color: $white;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.demo-site-footer-block {
+  display: flex;
+  margin-bottom: 1rem;
+
+  .fa {
+    font-size: 2rem;
+    color: darken($demo-site-footer-bg, 20%);
+  }
+
+  p {
+    margin-left: 1rem;
+    line-height: 1.125rem;
+  }
+}
+
+.demo-site-footer-bottom {
+  background: darken($demo-site-footer-bg, 20%);
+  padding: 1rem 0;
+
+  p,
+  .menu {
+    margin-bottom: 0;
+  }
+
+  .demo-site-footer-bottom-links {
+    justify-content: flex-end;
+
+    a {
+      color: lighten($demo-site-footer-bg, 40%);
+    }
+
+    @include breakpoint(medium down) {
+      justify-content: center;
+    }
+  }
+
+  @include breakpoint(medium down) {
+    text-align: center;
+  }
+}
+

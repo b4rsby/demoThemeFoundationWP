@@ -1,0 +1,23 @@
+// Colors
+$font-color: #3a3a3a;
+$link-color: #0ae;
+$link-color-hover: adjust-hue($link-color, -240);
+$theme-green: #70B85D;
+$theme-dark-green: #2C5E2E;
+$theme-off-white: #FFFEF1;
+$theme-light-blue: #54D0ED;
+$theme-dark-blue: #0C273D;
+
+
+// Font
+@import url('https://fonts.googleapis.com/css?family=Sarabun:400,800');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+$sarabun: 'Sarabun', sans-serif; 
+$pacifico: 'Pacifico', cursive; 
+
+
+
+$monospace: consolas, monaco, menlo, monospace;
+
+

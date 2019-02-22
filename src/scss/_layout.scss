@@ -1,0 +1,54 @@
+/*=Layout
+---------------------------------------------------------------------*/
+@import 'deps/variables';
+
+// Container class
+// container.container--large
+.container {
+	@include xy-grid-container;
+
+	@each $breakpoint-name, $breakpoint in $breakpoints {
+		&--#{$breakpoint-name} {max-width: $breakpoint}
+	}
+	// @include m(full) {max-width: 100%};
+	&--full {@include max-width-100;}
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*-------First section------*/
+
+
+$hero-height: 80vh;
+.hero-section {
+  background-color: $theme-green;
+  height: $hero-height;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .hero-section-text {
+
+   h1 {
+    font-size: 7rem;
+    font-family: $sarabun;
+    }
+
+
+
+    color: $white;
+    text-shadow: 1px 1px 2px $black;
+  }
+    
+  
+}
+
+
+
+
+
